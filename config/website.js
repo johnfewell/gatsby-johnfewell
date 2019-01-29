@@ -1,21 +1,22 @@
-const tailwind = require('../tailwind');
+const tailwind = require("../tailwind");
 
 module.exports = {
-  pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
+  pathPrefix: "/", // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
 
-  siteTitle: 'Cara - Gatsby Starter Portfolio', // Navigation and Site Title
-  siteTitleAlt: 'Cara', // Alternative Site title for SEO
-  siteUrl: 'https://portfolio-cara.netlify.com', // Domain of your site. No trailing slash!
-  siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
-  siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
+  siteTitle: "John Fewell | Full Stack Web Developer", // Navigation and Site Title
+  siteTitleAlt: "John Fewell", // Alternative Site title for SEO
+  siteUrl: "https://johnfewell.com", // Domain of your site. No trailing slash!
+  siteLanguage: "en", // Language Tag on <html> element
+  siteLogo: "/logos/logo-1024.png", // Used for SEO and manifest
+  siteDescription:
+    "This is my portfolio site and has links to my blog, github and my recent projects",
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@cara', // Twitter Username
-  ogSiteName: 'cara', // Facebook Site Name
-  ogLanguage: 'en_US', // Facebook Language
+  userTwitter: "", // Twitter Username
+  ogSiteName: "", // Facebook Site Name
+  ogLanguage: "en_US", // Facebook Language
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
-  backgroundColor: tailwind.colors.blue,
+  backgroundColor: tailwind.colors.blue
 };
