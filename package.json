@@ -20,7 +20,7 @@
     "gatsby-transformer-sharp": "2.1.7",
     "postcss": "7.0.14",
     "postcss-cli": "6.1.2",
-    "prop-types": "15.6.2",
+    "prop-types": "15.7.2",
     "react": "16.6.0",
     "react-dom": "16.6.0",
     "react-emotion": "9.2.12",
