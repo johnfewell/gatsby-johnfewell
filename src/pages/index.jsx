@@ -18,6 +18,9 @@ import { colors } from "../../tailwind";
 import triangle from "../images/triangle.svg";
 import avatar from "../images/avatar.jpg";
 import "../styles/global";
+import texture from '../images/copy_texture_2_large.jpg';
+import texture2 from '../images/copy_texture_4_large.jpg';
+
 
 const Divider = styled(ParallaxLayer)`
   ${tw("absolute w-full h-full")};
@@ -70,6 +73,10 @@ const Title = styled.h1`
 const Subtitle = styled.p`
   ${tw("text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4")};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: text;
+  color: transparent !important;
+  background-repeat: no-repeat;
+  background-image: url(${texture2});
 `;
 
 const ProjectsWrapper = styled.div`
@@ -109,6 +116,10 @@ const Avatar = styled.img`
 
 const AboutSub = styled.span`
   ${tw("text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl")};
+    -webkit-background-clip: text;
+  color: transparent !important;
+  background-repeat: no-repeat;
+  background-image: url(${texture2});
 `;
 
 const AboutDesc = styled.p`
@@ -134,6 +145,7 @@ const Footer = styled.footer`
     text-decoration: none;
   }
 `;
+
 
 const Index = () => (
   <React.Fragment>
@@ -168,13 +180,35 @@ const Index = () => (
           left="80%"
           top="70%"
         />
+        <SVG
+          icon="triangle"
+          width={12}
+          stroke={colors.white}
+          left="90%"
+          top="30%"
+        />
+        <SVG
+          icon="circle"
+          width={16}
+          fill={colors.yellow}
+          left="70%"
+          top="90%"
+        />
+        <SVG
+          icon="triangle"
+          className={hidden}
+          width={16}
+          stroke={colors.teal}
+          left="18%"
+          top="75%"
+        />
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
             Hello, <br /> I'm John Fewell.
           </BigTitle>
-          <Subtitle>
+          <Subtitle className="text-clip" >
             I build beautiful and performant web applications.
           </Subtitle>
         </Hero>
