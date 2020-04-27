@@ -19,7 +19,7 @@
     "gatsby-source-filesystem": "2.0.6",
     "gatsby-transformer-sharp": "2.1.7",
     "postcss": "7.0.15",
-    "postcss-cli": "6.1.2",
+    "postcss-cli": "7.1.1",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
